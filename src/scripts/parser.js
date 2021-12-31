@@ -105,7 +105,7 @@ function makeCommand(cmd) {
  */
 function parseProcessList(data) {
   // parse oldstyle ps result
-  var ore = new RegExp(/^(\w+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+([a-fA-F0-9]+)\s+([a-fA-F0-9]+ \w)\s+(.+)/m);
+  var ore = new RegExp(/^(\w+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\w*)\s+([a-fA-F0-9]+ \w)\s+(.+)/m);
   // parse 4.4 or above ps result
   var nre = new RegExp(/^(\d+)\s+(\d+)\s+(\d+m?)\s+(\w+\s*<?)\s+(.+)/m);
   var lines = data.trim().split('\n');
